@@ -1,6 +1,6 @@
 # CORS preflight
 
-Setting a custom header in a request triggers a pre-flight CORS request to the requested resource with an OPTIONS method and `Access-Control-Request-Method` and `Access-Control-Request-Method` headers:
+Setting a custom header in a request triggers a pre-flight CORS request to the requested resource with an OPTIONS method and `Access-Control-Request-Method` and `Access-Control-Request-Headers` headers:
 
 ```
 req: {
