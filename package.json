@@ -1,0 +1,26 @@
+{
+  "name": "ipfs-cors-preflight-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf public/bundle.js",
+    "bundle": "browserify public/app.js > public/bundle.js",
+    "start": "http-server -c-1 -p 12345 public",
+    "dev": "npm run bundle && npm run start",
+    "test": "test-ipfs-example"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.5.2",
+    "chromedriver": "^85.0.1",
+    "execa": "^4.0.3",
+    "go-ipfs": "^0.6.0",
+    "http-server": "^0.12.3",
+    "ipfs-http-client": "^47.0.1",
+    "ipfsd-ctl": "^7.0.0",
+    "nightwatch": "^1.4.1",
+    "test-ipfs-example": "^2.0.3"
+  }
+}
